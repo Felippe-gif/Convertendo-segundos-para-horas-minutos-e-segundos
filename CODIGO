@@ -1,0 +1,9 @@
+print('\n\t\t --- Convertendo segundos para horas, minutos e segundos --- \n')
+
+n = int(input('Total de segundos :'))  # Total de segundos
+
+horas = n // 3600  # Calcula horas (divisão inteira)
+minutos = (n % 3600) // 60  # Resto das horas / 60 para minutos
+segundos = n % 60  # Resto dos minutos para segundos
+
+print(f'{horas:.0f}:{minutos:.0f}:{segundos:.0f}')  # Formato HH:MM:SS
